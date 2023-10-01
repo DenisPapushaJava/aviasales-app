@@ -1,0 +1,63 @@
+.cardTicket {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+
+  &Header {
+    display: flex;
+
+  }
+
+  &Price {
+    color: #2196F3;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto;
+  }
+
+  &Info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 0;
+
+    &Date {
+      display: flex;
+      flex-direction: column;
+
+      &Day {
+        color: #a0b0b9;
+        font-size: 12px;
+        line-height: 18px;
+        text-transform: uppercase;
+      }
+
+      &Time {
+        color: #4a4a4a;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  }
+  &Spinner {
+    margin-top:30px;
+  }
+}
+.showTicketButton{
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  background-color:#2196F3;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 50px;
+  margin-top:10px;
+  margin-bottom: 50px;
+  transition: background-color 0.3s, color 0.3s;
+  &:hover{
+    background-color:#0477D1;
+  }
+}

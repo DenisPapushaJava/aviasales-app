@@ -1,0 +1,35 @@
+.tabFilter {
+  margin-bottom: 10px;
+
+  &Select {
+    text-transform: uppercase;
+    color: #4A4A4A;
+    width: 168px;
+    height: 50px;
+    padding: 15px;
+    font-weight: 600;
+    border: 1px solid rgba(223, 229, 236, 1);
+    background-color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:first-child {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    &:hover {
+      background-color: #2196F3;
+      color: #fff;
+    }
+  }
+}
+
+.active {
+  background-color: #2196F3;
+  color: #fff;
+}
