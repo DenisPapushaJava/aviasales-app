@@ -117,7 +117,7 @@ const CardTicket = () => {
                         </div>
                     ))}
                     <button className={styles.showTicketButton} onClick={() => {
-                        setCardTickets(cardTickets + 5);
+                        setCardTickets((cT) => cT +5 );
                     }}>
                         Показать еще 5 билетов
                     </button>
